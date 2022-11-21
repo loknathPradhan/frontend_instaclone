@@ -7,7 +7,7 @@ export default function Viewposts({ info }) {
 
 
   useEffect(() => {
-    axios.get('https://temp-app-instaclone.herokuapp.com/').then(res => {
+    axios.get('https://temp-app-instaclone.herokuapp.com/render').then(res => {
       console.log(res.data)
       setPost(res.data);
     })

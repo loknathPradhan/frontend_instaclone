@@ -24,7 +24,7 @@ export default function CreatePost() {
       for ( var key in data ) {
         postData.append(key, data[key]);
       }
-      axios.post('https://temp-app-instaclone.herokuapp.com/', postData,{})
+      axios.post('https://temp-app-instaclone.herokuapp.com/update', postData,{})
       .then(res => console.log(res))
       .catch(e => console.log(e));
 
